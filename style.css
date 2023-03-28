@@ -26,9 +26,9 @@ h1 {
 
 .field {
    position: relative;
-   width: 1500px;
+   width: 1050px;
    display: flex;
-   height: 950px;
+   height: 650px;
    flex-wrap: wrap;
 }
 

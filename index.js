@@ -188,7 +188,6 @@ function spawn(gameMap, type, columns, rows) {
             }
          })
          rooms.map(el => {
-            console.log(el.col, el.row)
             gameMap.map(elem => {
                if (elem[0] === el.col && elem[1] === el.row) {
                   elem[2] = "tile"
