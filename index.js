@@ -171,7 +171,7 @@ function spawn(gameMap, type, columns, rows) {
          }
          break;
       case ("sword"):
-         while (i < 2) {
+         while (i < 3) {
             if (game.gameMap[randNum][2] === "tile") {
                game.gameMap[randNum][2] = type
                randNum = randomNum(num, 0)
