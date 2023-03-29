@@ -18,57 +18,15 @@
 	<div class="field-box">
 		<div class="popup">
 			<div class="popup__content">
-				<h1 class="popup__title">Game Over!</h1>
+				<h1 class="popup__title"></h1>
 				<button class="popup__btn">Начать новую игру</button>
 			</div>
 		</div>
 		<div class="field">
 		</div>
 	</div>
+	<script src="helpers.js"></script>
 	<script src="index.js"></script>
-	<script>
-		var game = new Game();
-		game.init();
-		const btnStart = document.querySelector(".popup__btn")
-		btnStart.addEventListener("click", (e) => {
-			e.preventDefault()
-			game.init()
-		})
-		document.addEventListener("keydown", (e) => {
-			const isPopup = document.querySelector(".popup").style.display === "none"
-			const keyName = e.key
-			switch (keyName.toLowerCase()) {
-				case ("w"):
-					game.moveTop(isPopup)
-					break;
-				case ("ц"):
-					game.moveTop(isPopup)
-					break;
-				case ("s"):
-					game.moveBottom(isPopup)
-					break;
-				case ("ы"):
-					game.moveBottom(isPopup)
-					break;
-				case ("d"):
-					game.moveRight(isPopup)
-					break;
-				case ("в"):
-					game.moveRight(isPopup)
-					break;
-				case ("a"):
-					game.moveLeft(isPopup)
-					break;
-				case ("ф"):
-					game.moveLeft(isPopup)
-					break;
-				case (" "):
-					e.preventDefault()
-					game.attack(isPopup)
-					break;
-			}
-		})
-	</script>
 </body>
 
 </html>
